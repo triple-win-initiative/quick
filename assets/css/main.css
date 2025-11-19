@@ -4,3 +4,8 @@
 @plugin "flyonui";
 @import "flyonui/variants.css";
 @plugin "@iconify/tailwind4";
+@plugin "@tailwindcss/typography";
+
+.hero {
+  @apply p-10 grid md:grid-cols-2 gap-5;
+}

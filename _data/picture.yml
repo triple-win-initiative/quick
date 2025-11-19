@@ -1,0 +1,37 @@
+# uses here.
+source: /_images
+output: generated
+defaults:
+  copy_original: false
+media_queries:
+    mobile: 'max-width: 480px'
+    tablet: 'max-width: 768'
+    laptop: 'max-width: 1024px'
+    desktop: 'max-width: 1200'
+    wide: 'min-width: 1201'
+format_quality:
+    jpg: 70
+    png: 70
+    webp: 60
+
+presets:
+  default:
+    formats: [webp] # Order matters!
+    widths: [336, 476, 900] # Image widths, in pixels.
+    link_source: false # wrap images in a link to the original source image.
+    attributes:
+      parent: 'data-downloadable="false"'
+      picture: 'class="awesome" data-volume="11"'
+      img: 'class="rounded_image"'
+
+  webp:
+    formats: [webp]
+    link_source: false
+
+  lazy:
+    markup: data_auto
+    formats: [webp]
+    noscript: true
+    link_source: false
+    attributes:
+      parent: class="lazy"

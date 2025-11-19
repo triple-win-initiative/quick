@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   {%- include head.html -%}
-  <body class="bg-red-100 min-h-screen">
+  <body class="bg-red-100 min-h-screen prose max-w-none">
+
     {%- include navbar.html -%}
-    <main class="min-h-[80vh] container mx-auto">
+    <main class="min-h-[80vh]">
       {{ content }}
     </main>
     {%- include footer.html -%}
