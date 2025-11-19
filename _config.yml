@@ -6,6 +6,16 @@ plugins:
   - jekyll-postcss-v2
   - jekyll-seo-tag
   - jekyll-sitemap
+collections:
+  team: 
+    output: true
+    permalink: /team/:slug/
+  blog: 
+    output: true
+    permalink: /blog/:slug/
+  pages: 
+    output: true
+    permalink: /:slug/
 exclude:
   - package.json
   - pnpm-lock.yaml
