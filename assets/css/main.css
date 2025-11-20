@@ -7,5 +7,13 @@
 @plugin "@tailwindcss/typography";
 
 .hero {
-  @apply p-10 grid md:grid-cols-2 gap-5;
+  @apply p-10 grid md:grid-cols-2 gap-5 items-center;
+}
+
+@media (width >= 48rem) {
+.navbar-center {
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+    }
 }
