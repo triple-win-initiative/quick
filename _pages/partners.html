@@ -1,7 +1,8 @@
 ---
-layout: default
-title: Our Partners
-seo_title: partners
+layout: page
+title: Our Partners and Founders
+seo_title: partners and founders
+description: We thank our partners and funders for their generous support of the Quality in Childcare in Kenya project
 image:
 hero_image:
 hero_image: "/_images/fieldwork/kids_beads.jpeg"
@@ -9,28 +10,59 @@ hero_cta_title:
 hero_cta_link:
 ---
 
-<div class="max-w-5xl px-2 mt-10 text-center mx-auto">
-  <h1 class="text-center">{{page.title}}</h1>
-  <br><br>
-  <h2>Coming soon...</h2>
-</div>
+<section class="max-w-7xl px-2 mt-10 text-center mx-auto">
+  <h2 class="text-center text-5xl lg:text-7xl">Partners</h2>
+  <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
+    {%- for partner in site.data.partners -%}
+    <a href="{{partner.link}}" class="no-underline text-gray-800 block h-full">
+     <div class="p-5 flex items-start border border-solid border-gray-300 rounded-lg shadow-lg hover:bg-gray-200 h-full">
+        <div class="h-full not-prose flex flex-col ">
+            <img src="{{partner.image}}" alt="{{partner.title}}" class="max-w-full h-auto" />
+          <div class="p-3 not-prose mt-auto">
+            <h5 class="card-title mb-0.5">{{partner.title}}</h5>
+          </div>
+        </div>
+      </div>
+    </a>
+    {%- endfor -%}
+  </div>
+</section>
+<section class="bg-slate-200 pb-20 pt-1 mt-20">
+  <div class="max-w-5xl px-2  text-center mx-auto ">
+  <h2 class="text-center text-5xl lg:text-7xl">Founders</h2>
+    <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
+      {%- for partner in site.data.founders -%}
+      <a href="{{partner.link}}" class="no-underline text-gray-800 block h-full">
+     <div class="p-5 flex items-start border border-solid border-gray-300 rounded-lg shadow-lg hover:bg-gray-200 h-full bg-gray-50">
+          <div class="h-full not-prose flex flex-col ">
+              <img src="{{partner.image}}" alt="{{partner.title}}" class="max-w-full h-auto" />
+            <div class="p-3 not-prose mt-auto">
+              <h5 class="card-title mb-0.5">{{partner.title}}</h5>
+            </div>
+          </div>
+        </div>
+      </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
 
 
 <!-- <div class="w-full mx- py-10">
   <div class="@container-4xl flex flex-wrap gap-3 justify-center max-w-5xl mx-auto">
 
-    {%- for member in site.team -%}
+    {%- for partner in site.team -%}
     <div class=" flex items-start border border-solid border-gray-300 shadow-lg rounded-lg">
-      <a href="{{member.url}}" class="no-underline text-gray-800">
+      <a href="{{partner.url}}" class="no-underline text-gray-800">
         <div class="h-fit card-side max-w-sm sm:max-w-full w-80">
           <figure class="not-prose size-80 overflow-hidden">
-            <img src="{{member.image}}" alt="{{member.title}}" class="" />
+            <img src="{{partner.image}}" alt="{{partner.title}}" class="" />
           </figure>
           <div class="p-3 not-prose">
-            <h5 class="card-title mb-0.5">{{member.title}}</h5>
-            <p><b>{{member.organization}}</b></p>
-            <p class="mb-2">{{member.role}}</p>
-              <a href="{{member.website}}" 
+            <h5 class="card-title mb-0.5">{{partner.title}}</h5>
+            <p><b>{{partner.organization}}</b></p>
+            <p class="mb-2">{{partner.role}}</p>
+              <a href="{{partner.website}}" 
                  target="_blank" 
                  nofollow noreferrer>
                  Visit website

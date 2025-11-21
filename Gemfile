@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+jsource 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'webrick'

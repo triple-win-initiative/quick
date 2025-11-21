@@ -9,9 +9,11 @@ hero_cta_title:
 hero_cta_link:
 ---
 
-<div class="max-w-5xl px-2 mt-10">
-  <h1 class="text-center">{{page.title}}</h1>
-</div>
+{% include hero_wide.html 
+    title=page.title 
+    subtitle=page.description  
+    image="/_images/fieldwork/field-team.jpeg"
+%}
 
 <div class="w-full mx- py-10">
   <div class="@container-4xl flex flex-wrap gap-3 justify-center max-w-5xl mx-auto">

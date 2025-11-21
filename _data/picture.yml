@@ -8,7 +8,7 @@ media_queries:
     tablet: 'max-width: 768'
     laptop: 'max-width: 1024px'
     desktop: 'max-width: 1200'
-    wide: 'min-width: 1201'
+    wide: 'min-width: 1920'
 format_quality:
     jpg: 70
     png: 70
@@ -17,7 +17,7 @@ format_quality:
 presets:
   default:
     formats: [webp] # Order matters!
-    widths: [336, 476, 900] # Image widths, in pixels.
+    widths: [336, 476, 900, 1920] # Image widths, in pixels.
     link_source: false # wrap images in a link to the original source image.
     attributes:
       parent: 'data-downloadable="false"'
