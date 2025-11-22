@@ -1,3 +1,19 @@
 logo_1: /assets/images/funder_logos/IPA.png
 logo_2: /assets/images/funder_logos/IPA.png
 items:
+- name: About Quick
+  children:
+  - name: Study background
+    link: /study-background/
+  - name: Data collection
+    link: /data-collection/
+  - name: Pre-registrations
+    link: /pre-registrations/
+- name: Team
+  link: /team/
+- name: Partners
+  link: /partners/
+- name: Results
+  link: /results/
+- name: TWI
+  link: /
