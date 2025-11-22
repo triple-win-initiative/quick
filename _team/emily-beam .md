@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: team-member
 title: Emily Beam 
 image: "/assets/images/team/beam_pic_21.jpg"
 role: Principal Investigator 

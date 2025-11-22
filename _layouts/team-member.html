@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class=" text-gray-700 ">
+  <div class="grid gap-5 md:grid-cols-2 max-w-5xl mx-auto pt-10 px-5">
+    <div class="lg:p-10 ">
+      <h1 class="text-gray-800 text-2xl md:text-4xl lg:text-7xl mb-0">{{page.title}}</h1>
+      <p class="md:text-2xl font-semibold">{{page.role}}</p>
+      <p>{{page.organization}}</p>
+      <p>{{page.position}}</p>
+      <br>
+      <a href="{{page.website}}" class="btn btn-outline btn-primary not-prose">Visit a website</a>
+    </div>
+    <div class=" overflow-hidden">
+      {% picture {{page.image}} --alt {{page.title}} %}
+    </div>
+  </div>
+  <div class="container max-w-5xl mx-auto px-5 pb-20">
+    {{content}}
+  </div>
+</div>

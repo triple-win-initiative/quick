@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: team-member
 title: Eunice Kioko 
 image: "/assets/images/team/ipa-placeholder-bio.jpg"
 role: Associate Research Manager

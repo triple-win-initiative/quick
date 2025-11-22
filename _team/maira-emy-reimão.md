@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: team-member
 title: Maira Emy Reimão 
 image: "/assets/images/team/Reimao-VSB-Headshot.jpg"
 role: Principal Investigator 

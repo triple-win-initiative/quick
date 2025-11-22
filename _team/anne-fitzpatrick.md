@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: team-member
 title: Anne Fitzpatrick 
 image: "/assets/images/team/anne-fitzpatrick.jpg"
 role: Principal Investigator 
