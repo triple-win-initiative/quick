@@ -1,7 +1,9 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "TWI Triple Win Initiative" # the name of your site, e.g. ACME Corp.
 # https://github.com/triple-win-initiative/QuiCK-website/tree/main/content/
+title: About Quick
+description: Working alongside IPA Kenya and a local social enterprise, we are testing a pioneering approach to building a stronger childcare market from the ground up.
+logo: "/assets/images/funder_logos/IPA.png"
 plugins:
   - jekyll-postcss-v2
   - jekyll-seo-tag

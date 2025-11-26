@@ -3,6 +3,9 @@ layout: about
 title: Pre-registrations
 image: "/_images/fieldwork/field-team.jpeg"
 description: he page you see after clicking on "About QuiCK" it is also the page you get after clicking on the sub-menu, Study Background. The sub-menu comes up after click on About QuiCK
+hero_image: "/_images/fieldwork/field-team.jpeg"
+hero_bg: bg-green-100
+hero_color: text-gray-900
 ---
 
 ## Lorem ipsum dolor 

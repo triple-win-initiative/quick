@@ -3,6 +3,9 @@ layout: about
 title: Study background
 image: "/_images/fieldwork/firm_survey-1.jpeg"
 description: The page you see after clicking on "About QuiCK" it is also the page you get after clicking on the sub-menu, Study Background. The sub-menu comes up after click on About QuiCK
+hero_image: "/_images/fieldwork/firm_survey-1.jpeg"
+hero_bg: bg-emerald-700
+hero_color: text-white
 ---
 ## Lorem ipsum dolor 
 
