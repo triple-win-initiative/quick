@@ -5,7 +5,7 @@ seo_title: "Quality in Childcare in Kenya - how it works"
 description: "We are a research organization dedicated to discovering and advancing what works to improve the lives of people living in poverty."
 image: "/images/fieldwork/child_assessment.jpeg"
 logo: "/assets/images/funder_logos/IPA.png"
-hero_image: "/_images/fieldwork/kids_beads.jpeg"
+hero_image: "/_images/fieldwork/field-team.jpeg"
 hero_cta_title:
 hero_cta_link:
 ---

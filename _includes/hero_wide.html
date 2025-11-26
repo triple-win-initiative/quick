@@ -1,9 +1,24 @@
-<section class="hero_wide w-full h-80 md:h-120 lg:h-160 relative overflow-hidden">
-  <div class="hero_image absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-full">
-    {% picture {{include.image}} alt="Hero Image" --img class="brightness-40" %}
+<section 
+  class="relative w-full h-[30vh] md:h-[40vh] lg:h-[60vh] xl:h-[80vh] max-h-[900px] overflow-hidden not-prose"
+  role="banner"
+>
+  <!-- Background -->
+  <div class="absolute inset-0">
+    {% picture {{ include.image }} alt="{{ include.title | escape }} background" --img class="w-full h-full object-cover" --picture class="w-full h-full block" %}
+    <div class="absolute inset-0 bg-black/55"></div>
   </div>
-  <div class="flex flex-col justify-center gap-10 px-5 lg:px-50 not-prose h-full relative ">
-     <h1 class="text-white text-3xl md:text-5xl lg:text-8xl font-bold">{{include.title}}</h1>
-     <p class="text-gray-50 text-xl lg:text-2xl">{{include.subtitle}}</p>
+
+  <!-- Content -->
+  <div class="relative z-20 h-full flex flex-col justify-center gap-6 px-6 lg:px-48">
+    <h1 class="text-white font-bold text-4xl md:text-6xl lg:text-7xl leading-tight">
+      {{ include.title }}
+    </h1>
+
+    {% if include.subtitle %}
+      <p class="text-gray-200 text-xl md:text-2xl lg:text-3xl max-w-3xl">
+        {{ include.subtitle }}
+      </p>
+    {% endif %}
   </div>
 </section>
+
