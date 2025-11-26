@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-np
 title: Our Partners and Founders
 seo_title: partners and founders
 description: We thank our partners and funders for their generous support of the Quality in Childcare in Kenya project
@@ -10,34 +10,29 @@ hero_cta_link:
 ---
 
 <section class="max-w-7xl px-2 mt-10 text-center mx-auto">
-  <h2 class="text-center text-5xl lg:text-7xl">Partners</h2>
+  <h2 class="font-bold text-center text-5xl lg:text-7xl py-5">Partners</h2>
   <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
     {%- for partner in site.data.partners -%}
     <a href="{{partner.link}}" class="no-underline text-gray-800 block h-full">
      <div class="p-5 flex items-start border border-solid border-gray-300 rounded-lg shadow-lg hover:bg-gray-200 h-full">
         <div class="h-full not-prose flex flex-col ">
             <img src="{{partner.image}}" alt="{{partner.title}}" class="max-w-full h-auto" />
-          <div class="p-3 not-prose mt-auto">
-            <h5 class="card-title mb-0.5">{{partner.title}}</h5>
-          </div>
         </div>
       </div>
     </a>
     {%- endfor -%}
   </div>
 </section>
-<section class="bg-slate-200 pb-20 pt-1 mt-20">
+
+<section class="bg-slate-200 pb-20 pt-10 mt-20">
   <div class="max-w-5xl px-2  text-center mx-auto ">
-  <h2 class="text-center text-5xl lg:text-7xl">Founders</h2>
-    <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-4">
+  <h2 class="font-bold text-center my-5 text-5xl lg:text-7xl">Founders</h2>
+    <div class="flex gap-5 flex-wrap justify-center">
       {%- for partner in site.data.founders -%}
       <a href="{{partner.link}}" class="no-underline text-gray-800 block h-full">
-     <div class="p-5 flex items-start border border-solid border-gray-300 rounded-lg shadow-lg hover:bg-gray-200 h-full bg-gray-50">
-          <div class="h-full not-prose flex flex-col ">
-              <img src="{{partner.image}}" alt="{{partner.title}}" class="max-w-full h-auto" />
-            <div class="p-3 not-prose mt-auto">
-              <h5 class="card-title mb-0.5">{{partner.title}}</h5>
-            </div>
+     <div class="p-2 md:p-4 border border-solid border-gray-300 rounded-lg shadow-lg hover:bg-gray-200 bg-gray-50">
+          <div class="h-full not-prose w-[280px]">
+              <img src="{{partner.image}}" alt="{{partner.title}}" class="max-w-full h-auto mx-auto" />
           </div>
         </div>
       </a>

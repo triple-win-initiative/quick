@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: landing
 title: "Quality in Childcare in Kenya"
 seo_title: "Quality in Childcare in Kenya - how it works"
 description: "We are a research organization dedicated to discovering and advancing what works to improve the lives of people living in poverty."
