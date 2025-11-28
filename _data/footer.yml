@@ -1,0 +1,25 @@
+- col: Company
+  items:
+  - title: Study background
+    link: /study-background/
+  - title: Data collection
+    link: /data-collection/
+  - title: Pre-registrations
+    link: /pre-registrations/
+- col: Writes
+  items:
+  - title: Team
+    link: /team/
+  - title: Partners and Founders
+    link: /partners/
+  - title: Results
+    link: /results/
+- col: Social Media
+  items:
+  - title: Facebook
+    link: https://www.facebook.com/
+  - title: Youtube
+    link: https://www.youtube.com/
+
+
+    

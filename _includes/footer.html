@@ -8,26 +8,14 @@
       <p class="text-base-content text-sm">{{site.description}}</p>
     </div>
   </aside>
-  <nav class="text-base-content">
-    <h6 class="footer-title">Services</h6>
-    <a href="#" class="link link-hover">Branding</a>
-    <a href="#" class="link link-hover">Design</a>
-    <a href="#" class="link link-hover">Marketing</a>
-    <a href="#" class="link link-hover">Advertisement</a>
-  </nav>
-  <nav class="text-base-content">
-    <h6 class="footer-title">Company</h6>
-    <a href="#" class="link link-hover">About us</a>
-    <a href="#" class="link link-hover">Contact</a>
-    <a href="#" class="link link-hover">Jobs</a>
-    <a href="#" class="link link-hover">Press kit</a>
-  </nav>
-  <nav class="text-base-content">
-    <h6 class="footer-title">Legal</h6>
-    <a href="#" class="link link-hover">Terms of use</a>
-    <a href="#" class="link link-hover">Privacy policy</a>
-    <a href="#" class="link link-hover">Cookie policy</a>
-  </nav>
+  {%- for col in site.data.footer -%}
+    <nav class="text-base-content">
+      <h6 class="footer-title">{{col.col}}</h6>
+      {%- for item in col.items -%}
+        <a href="{{item.link}}" class="link link-hover">{{item.title}}</a>
+      {%- endfor -%}
+    </nav>
+  {%- endfor -%}
   
 </footer>
 <p class="m-0 text-center pb-10">© {{ site.time | date: '%Y' }} {{site.title}}. All Rights Reserved</p>
