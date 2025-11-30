@@ -8,7 +8,7 @@ layout: default
       <p class="md:text-2xl text-center md:text-right {{page.hero_color}}">{{page.description}}</p>
     </div>
     <div class="overflow-hidden not-prose">
-      {%- if condition -%}
+      {%- if page.hero_image -%}
       {% preview {{page.hero_image}} --alt {{page.title}} %}
       {%- else -%}
       {% picture "/assets/images/placeholder_post.jpg" --alt {{page.title}} %}
