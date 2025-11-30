@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="{{page.hero_bg}}">
+  <div class="max-w-5xl mx-auto p-2 md:p-4 grid md:grid-cols-2 md:gap-4 items-center">
+    <div class="lg:p-20">
+      <h1 class="{{page.hero_color}} text-2xl md:text-4xl lg:text-7xl text-center md:text-right">{{page.title}}</h1>
+      <p class="md:text-2xl text-center md:text-right {{page.hero_color}}">{{page.description}}</p>
+    </div>
+    <div class="overflow-hidden not-prose">
+      {%- if condition -%}
+      {% preview {{page.hero_image}} --alt {{page.title}} %}
+      {%- else -%}
+      {% picture "/assets/images/placeholder_post.jpg" --alt {{page.title}} %}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<div class=" mx-auto my-20 px-5 max-w-7xl">{{content}}</div>

@@ -1,0 +1,32 @@
+---
+layout: landing
+title: Blog
+image: "/assets/images/placeholder_post.jpg"
+hero_image: "/assets/images/green.jpg"
+description: Lorem dolor ipsum sit amet
+hero_bg: bg-teal-400
+---
+
+<div class="prose mx-auto ">
+
+  <div class="p-2 md:p4 grid gap-4">
+    {%- for post in site.posts -%}
+    <div class="not-prose">
+      <a href="{{post.url}}" class="grid md:grid-cols-[250px_1fr] gap-3 alig-top  ">
+        {%- if post.image -%}
+        {% picture preview {{post.image}} --alt post %}
+        {%- else -%}
+        {% picture preview "/assets/images/placeholder_post.jpg" --alt post %}
+        {%- endif -%}
+        <div>
+          <h2 class="font-semibold">{{post.title}}</h2>
+          <small>{{ post.date | date: "%B %d, %Y" }}</small>
+          {%- for author in post.authors -%}
+          <p>{{author}}</p>
+          {%- endfor -%}
+        </div>
+      </a>
+    </div>
+    {%- endfor -%}
+  </div>
+</div>

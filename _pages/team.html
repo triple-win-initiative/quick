@@ -2,7 +2,7 @@
 layout: default
 title: Our Team
 seo_title: Team of ...
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eligendi maiores atque est iure excepturi velit recusandae numquam voluptatibus hic, consequuntur odio illo cumque. Esse obcaecati numquam illum molestiae eum laboriosam ab.
+description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eligendi maiores atque est iure excepturi velit.
 image:
 hero_image: "/_images/fieldwork/field-team-2.jpeg"
 hero_cta_title:
@@ -15,15 +15,15 @@ hero_cta_link:
     image=page.hero_image
 %}
 
-<div class="w-full mx- py-10">
-  <div class="@container-4xl flex flex-wrap gap-3 justify-center max-w-5xl mx-auto">
+<div class="w-full py-10">
+  <div class="flex flex-wrap gap-3 justify-center max-w-7xl mx-auto">
 
     {%- for member in site.team -%}
-    <div class=" flex items-start border border-solid border-gray-300 shadow-lg rounded-lg">
+    <div class=" flex items-start border border-solid border-gray-300 shadow-md hover:shadow-lg hover:bg-linear-to-r from-blue-50 to-green-50 rounded-lg">
       <a href="{{member.url}}" class="no-underline text-gray-800">
-        <div class="h-fit card-side max-w-sm sm:max-w-full w-80">
-          <figure class="not-prose size-80 overflow-hidden">
-            <img src="{{member.image}}" alt="{{member.title}}" class="" />
+        <div class="h-fit card-side w-70 ">
+          <figure class="not-prose size-70 overflow-hidden">
+            <img src="{{member.image}}" alt="{{member.title}}" class="rounded-t-lg" />
           </figure>
           <div class="p-3 not-prose">
             <h5 class="card-title mb-0.5">{{member.title}}</h5>

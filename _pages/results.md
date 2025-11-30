@@ -2,7 +2,7 @@
 layout: page
 title: Our Results
 seo_title: results
-description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quod nemo ab accusantium corporis vitae perspiciatis fuga. Eveniet velit aperiam repellendus non, corporis cumque, soluta eaque voluptatem perferendis dicta ipsa.
+description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quod nemo ab accusantium corporis vitae perspiciatis fuga.
 image:
 hero_image: "/_images/fieldwork/kids_beads.jpeg"
 hero_cta_title:
@@ -16,7 +16,7 @@ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quod nemo ab accus
 
 ### Community timeline
 
-![lorem ipsum](/assets/images/team/Anne-Fitzpatrick_updated.jpg)
+![lorem ipsum](/assets/images/team/anne-fitzpatrick.jpg)
 
 ## Set amit
 

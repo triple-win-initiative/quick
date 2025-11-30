@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="grid">
+  <div class="prose md:prose-lg my-10 mx-auto container max-w-5xl">
+    <h1>{{page.title}}</h1>
+    <small>{{ page.date | date: "%B %d, %Y" }} </small>
+    <div class="authors">
+
+      {%- for author in page.authors -%}
+        <div class="author">
+          {%- assign author_slug = author | slugify -%}
+          <a href="/team/{{author_slug}}">{{author}}</a>
+        </div>
+      {%- endfor -%}
+    </div>
+    <div class="border-gray-400 border-solid">
+      {%- if page.image -%}
+      {% picture {{page.image}} --alt illustration --img class="border border-solid border-gray-300 shadow-md" %}
+      {%- else -%}
+      <img src="/assets/images/ipa-placeholder-bio.jpg" alt="placeholder" class="border-solid" >
+      {%- endif -%}
+      {{content | toc}}
+    </div>
+  </div>
+</div>

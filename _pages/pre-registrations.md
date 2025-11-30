@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: page-2c
 title: Pre-registrations
 image: "/_images/fieldwork/field-team.jpeg"
 description: he page you see after clicking on "About QuiCK" it is also the page you get after clicking on the sub-menu, Study Background. The sub-menu comes up after click on About QuiCK

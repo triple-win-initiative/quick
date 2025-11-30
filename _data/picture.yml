@@ -1,19 +1,4 @@
 # uses here.
-source: /_images
-output: generated
-defaults:
-  copy_original: false
-media_queries:
-    mobile: 'max-width: 480px'
-    tablet: 'max-width: 768'
-    laptop: 'max-width: 1024px'
-    desktop: 'max-width: 1200'
-    wide: 'min-width: 1920'
-format_quality:
-    jpg: 70
-    png: 70
-    webp: 60
-
 presets:
   default:
     formats: [webp] # Order matters!
@@ -22,7 +7,11 @@ presets:
     attributes:
       parent: 'data-downloadable="false"'
       picture: 'class="awesome" data-volume="11"'
-      img: 'class="rounded_image"'
+  #    img: 'class="rounded_image"'
+  preview:
+    widths: [250]
+    formats: [webp]
+    link_source: false
 
   webp:
     formats: [webp]
@@ -35,3 +24,5 @@ presets:
     link_source: false
     attributes:
       parent: class="lazy"
+
+

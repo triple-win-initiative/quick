@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: page-2c
 title: Data collection
 image: "/_images/fieldwork/child_assessment.jpeg"
 description: The page you see after clicking on "About QuiCK" it is also the page you get after clicking on the sub-menu, Study Background. The sub-menu comes up after click on About QuiCK
