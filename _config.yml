@@ -1,8 +1,9 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://qck.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 # https://github.com/triple-win-initiative/QuiCK-website/tree/main/content/
 title: About Quick
 description: Working alongside IPA Kenya and a local social enterprise, we are testing a pioneering approach to building a stronger childcare market from the ground up.
+# https://github.com/triple-win-initiative/quick
 logo: "/assets/images/funder_logos/IPA.png"
 plugins:
   - jekyll-postcss-v2
