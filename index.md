@@ -3,7 +3,7 @@ layout: landing
 title: "Quality in Childcare in Kenya"
 seo_title: "Quality in Childcare in Kenya - how it works"
 description: "We are a research organization dedicated to discovering and advancing what works to improve the lives of people living in poverty."
-image: "/images/fieldwork/child_assessment.jpeg"
+image: "/assets/images/placeholder_post.jpg"
 logo: "/assets/images/funder_logos/IPA.png"
 hero_image: "/_images/fieldwork/field-team.jpeg"
 hero_cta_title:
