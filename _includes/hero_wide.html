@@ -3,7 +3,7 @@
   role="banner"
 >
   <!-- Background -->
-  <div class="absolute inset-0">
+  <div class="absolute inset-0" aria-hidden="true">
     {% picture {{ include.image }} alt="{{ include.title | escape }} background" --img class="w-full h-full object-cover" --picture class="w-full h-full block" %}
     <div class="absolute inset-0 bg-black/55"></div>
   </div>
